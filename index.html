@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aseel Shop</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/aseelicon.ico">
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Montez&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+   <!-- Special Announcements -->
+   
+    <div class="top-banner">
+      <p class="banner-text text-light  text-center p-3">🎉 FREE SHIPPING ON ALL PRODUCTS (BLACK FRIDAY OFFER) 🎉</p>
+      <button class="close-banner btn btn-warning text-light rounded-pill position-absolute mx-3 my-2" style="top: 0; right: 0;"><i class="fa fa-times" aria-hidden="true"></i></button>
+    </div>
+
+    
+    <!-- Navbar -->
+
+    <div class="container">
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between pb-3 pt-2">
+        <a href="./index.html" class="d-flex align-items-center col-md-3 mb-md-0 text-dark text-decoration-none navbar-brand">
+          <img src="./assets/images/aseelLogo.svg" alt="AseelLogo" width="120px">
+        </a>
+  
+        <ul class="nav col-12 col-md-auto justify-content-center mb-md-0">
+          <li><a href="./index.html" class="nav-link px-2 link-danger fw-semibold">Home</a></li>
+          <li><a href="./clothing.html" class="nav-link px-2 link-secondary fw-light">Clothing</a></li>
+          <li><a href="./arts.html" class="nav-link px-2 link-secondary fw-light">Arts & Crafts</a></li>
+          <li><a href="./beauty.html" class="nav-link px-2 link-secondary fw-light">Beauty</a></li>
+          <li><a href="./about.html" class="nav-link px-2 link-secondary fw-light">About</a></li>
+        </ul>
+
+        <form class="d-flex form-group">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          <button type="submit" class="btn border border-2"><span class="fa fa-search"></span></button>
+        </form>
+        
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-danger p-2 text-secondary text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24"  fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+            <span class="badge rounded-pill bg-danger">3</span>
+          </a>
+          <div class="dropdown-menu">
+            <div class="d-flex border-bottom px-2 py-2 justify-content-between">
+              <span>2 Items</span>
+              <a href="cart.html" class="nav-link">View Cart</a>
+            </div>
+            <li>
+              <span class="item">
+                <span class="item-left">
+                    <img src="./assets/images/artscrafts.jpg" width="58px" alt="" />
+                    <span class="item-info">
+                        <span>Item name</span>
+                        <span>23$</span>
+                    </span>
+                </span>
+                <span class="item-right">
+                    <button class="btn btn-xs btn-danger pull-right">x</button>
+                </span>
+              </span>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+                <svg class="bi" width="16" height="16"><use xlink:href="#image-fill"/></svg>
+                Photos
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+                <svg class="bi" width="16" height="16"><use xlink:href="#film"/></svg>
+                Movies
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+                <svg class="bi" width="16" height="16"><use xlink:href="#music-note-beamed"/></svg>
+                Music
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+                <svg class="bi" width="16" height="16"><use xlink:href="#joystick"/></svg>
+                Games
+              </a>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item dropdown-item-danger d-flex gap-2 align-items-center" href="#">
+                <svg class="bi" width="16" height="16"><use xlink:href="#trash"/></svg>
+                Trash
+              </a>
+            </li>
+          </div>
+        </div>
+
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-danger p-2 text-secondary text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+          </a>
+          <ul class="dropdown-menu text-small">
+            <li><a class="dropdown-item fw-semibold border-bottom mb-2" href="#">Your Account</a></li>
+            <li><a class="dropdown-item" href="#">Account</a></li>
+            <li><a class="dropdown-item" href="#">Orders</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </header> 
+  </div>
+
+      <!-- Hero (Video Display of Products)  -->
+
+      <div class="video-background-holder">
+        <div class="video-background-overlay">
+          <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="./assets/images/Aseel.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-background-content container h-100">
+          <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+              <img class="mb-4" src="./assets/images/aseelLogo-white.svg" alt="aseellogo" width="240px">
+              <h1 class="hero-desc mb-4">Original Moroccan Artisanat Products</h1>
+              <h2 class="btn btn-light rounded-pill px-4 py-2">SHOP NOW</h3>          
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Shopping Categories -->
+      
+      <div class="shopping-cat mx-5">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-5 p-5">
+          <div class="img-background-overlay">
+            <div class="col">
+              <div class="card rounded-pill shadow-md card-cover overflow-hidden" style="height: 80vh; background-image: url('./assets/images/clothing.jpg');">
+                <div class="text-center justify-content-center align-items-center my-auto">
+                  <h1 class="text-white mb-4">Clothing</h1>
+                  <button type="button" class="btn btn-outline-light border border-3 rounded-pill mx-auto px-3 py-2 mb-3 shadow">Shop Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card rounded-pill shadow-md card-cover overflow-hidden" style="height: 80vh; background-image: url('./assets/images/artscrafts.jpg');">
+              <div class="text-center justify-content-center align-items-center my-auto">
+                <h1 class="text-white mb-4">Arts & Crafts</h1>
+                <button type="button" class="btn btn-outline-light border border-3 rounded-pill mx-auto px-3 py-2 mb-3 shadow">Shop Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card rounded-pill shadow-md card-cover overflow-hidden" style="height: 80vh; background-image: url('./assets/images/beauty.jpg');">
+              <div class="text-center justify-content-center align-items-center my-auto">
+                <h1 class="text-white mb-4">Beauty</h1>
+                <button type="button" class="btn btn-outline-light border border-3 rounded-pill mx-auto px-3 py-2 mb-3 shadow">Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aseelpattern mb-4">
+      </div>
+
+      <!-- Trending Products  -->
+
+      <div class="container mb-5">
+        <h2 class="fw-semibold text-center p-3 mb-4">Trending Products</h2>
+        <div class="row  g-5">
+          <div class="col-sm-3">
+            <div class="card" style="width: 20rem;">
+              <img src="./assets/images/coasters.jpg" class="card-img-top" alt="Coasters">
+              <span class="mx-2 badge text-bg-success position-absolute m-2">Free Shipping</span>
+              <div class="card-body text-center">
+                <small class="card-text text-muted">Arts & Crafts</small><br>
+                <h5 class="card-title">Coasters Set of 6</h5>
+                <div>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star-half-o text-warning"></span>
+                  <span class="fa fa-star-o text-warning"></span>
+                  </span>(64)</span> 
+                  <h5 class="fw-semibold card-text text-danger mt-3 mb-2">MAD 105 </h5>      
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#" class="px-5 btn btn-danger rounded-pill"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card" style="width: 20rem;">
+              <img src="./assets/images/cardigan.jpg" class="card-img-top" alt="Coasters">
+              <span class="mx-2 badge bg-info text-dark position-absolute m-2">(30% OFF)</span>
+              <div class="card-body text-center">
+                <small class="card-text text-muted m-2">Clothing - MEN </small><br>
+                <h5 class="card-title">Striped Coat Cardigan</h5>
+                <div>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star-o text-warning"></span>
+                  </span>(151)</span>
+                  <p class="card-text text-danger mt-3 mb-2"><del class="text-muted">MAD 950</del> MAD 665 </p>      
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#" class="px-5 btn btn-danger rounded-pill"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card" style="width: 20rem;">
+              <img src="./assets/images/lampe.jpg" class="card-img-top" alt="Lamp">
+              <span class="mx-2 badge text-bg-warning position-absolute m-2">Best seller</span>
+              <div class="card-body text-center">
+                <small class="card-text text-muted">Arts & Crafts</small> <br>
+                <h5 class="card-title">Mosaic Table Lamp</h5>
+                <div>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star-half-o text-warning"></span>
+                  </span>(32)</span>
+                  <h5 class="fw-semibold card-text text-danger mt-3 mb-2">MAD 540 </h5>      
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#" class="px-5 btn btn-danger rounded-pill"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card border rounded" style="width: 20rem;">
+              <img src="./assets/images/argan.jpg" class="card-img-top" alt="Coasters">
+              <div class="card-body text-center">
+                <small class="card-text text-muted mb-3">Beauty</small>
+                <h5 class="card-title">Organic Argan Skincare Set</h5>
+                <div class="text-small">
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star-o text-warning"></span>
+                  <span class="fa fa-star-o text-warning"></span>
+                  </span>(48)</span>
+                  <h5 class="fw-semibold card-text mt-3 mb-2">MAD 540 </h5>      
+                </div>
+              </div>
+              <div class="text-center">
+                <a href="#" class="px-4 py-2 btn btn-danger rounded-pill mb-3"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trending Products  -->
+      
+      <div class="container mb-5">
+        <h2 class="fw-semibold text-center p-3 mb-4">Moroccan Culture Blog</h2>
+
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <p class="d-inline-block mb-2 text-primary">Football</p>
+                <h4 class="mb-0">World Cup 2022: Morocco to Face Spain in Round of 16</h4>
+                <div class="mb-1 text-muted">Dec 1</div>
+                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <button type="button" class="col-6 btn btn-danger rounded-pill">Continue Reading</button>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img class="img-thumbnail" src="./assets/images/blogwc.jpg" alt="moroccowc" width="200" height="250">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <p class="d-inline-block mb-2 text-success">Cinema</p>
+                <h4 class="mb-0">Ouarzazate, African Capital of Cinema</h4>
+                <div class="mb-1 text-muted">Nov 26</div>
+                <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <button type="button" class="col-6 btn btn-danger rounded-pill">Continue Reading</button>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features -->
+
+      <div class="features bg-light">
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
+          <div class="col d-flex align-items-start ">
+            <div class="icon-square text-danger d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 px-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+              </svg>
+            </div>
+            <div>
+              <h5 class="fw-semibold">Fast Shipping</h3>
+              <p class="text-muted small">On order over $99</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-danger d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 px-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-chat-left-dots" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h5 class="fw-semibold">24/7 Support</h3>
+              <p class="text-muted small">Live Chat Or Call</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-danger d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 px-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-credit-card-2-front" viewBox="0 0 16 16">
+                <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+                <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </div>
+            <div>
+              <h5 class="fw-semibold">Online Payment</h3>
+              <p class="text-muted small">Secure Payment Services</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-danger d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 px-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+                <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+              </svg>
+            </div>
+            <div>
+              <h5 class="fw-semibold">Easy Return</h3>
+              <p class="text-muted small">Hassle Free Shopping</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Footer -->
+      
+      <div class="footer bg-light">
+        <footer class="pt-5">
+          <div class="row pb-5">
+            <div class="col-6 col-md-3 mb-3">
+              <h5 class="text-danger fw-semibold mb-3">Get in Touch</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Phone: (+212) 66 000 60 60 </a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Agdal, Rabat, Morocco</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Available 7/7D from 9AM to 6PM</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">contact@aseelshop.com</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5 class="text-danger fw-semibold mb-3">Information</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About Us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shipping and Returns</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-3 mb-3">
+              <h5 class="text-danger fw-semibold mb-3">Shopping Categories</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Clothing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Arts & Crafts</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Beauty</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-4 mb-3">
+              <form>
+                <h5 class="text-danger fw-semibold mb-3">Subscribe to our newsletter</h5>
+                <p class="text-dark">Get notified about the latest drops and exclusive offers.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2 mb-3">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-danger" type="button">Subscribe</button>
+                </div>
+                <img src="./assets/images/visa-svgrepo-com.svg" width="32px" alt="visalogo">
+                <img class="mx-3" src="./assets/images/mastercard-svgrepo-com.svg" width="32px" alt="mastercardlogo">
+                <img src="./assets/images/paypal-svgrepo-com.svg" width="32px" alt="paypallogo">
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <img src="./assets/images/aseelLogo.svg" alt="AseelLogo" width="78">
+            </a>
+            <p>&copy; Aseel, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3">
+                <a href="#" class="nav-link p-0 text-danger">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a href="#" class="nav-link p-0 text-danger">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a href="#" class="nav-link p-0 text-danger">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+      
+      <div class="aseelpattern-footer">
+      </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
