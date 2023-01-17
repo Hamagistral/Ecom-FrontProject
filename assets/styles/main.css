@@ -1,5 +1,7 @@
 body {
   font-family: 'Rubik', sans-serif !important;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .hero-desc {
@@ -47,7 +49,6 @@ body {
 .dropdown-menu {
   margin: 4rem auto;
 }
-
 
 .cal-month,
 .cal-days,
@@ -126,7 +127,7 @@ body {
   background-repeat: repeat;  
 }
 
-.shopping-cat {
+.background-pattern {
   background-image: url("../images/background-white.png");  
   background-repeat: no-repeat;  
   background-position: 50% 20%;
@@ -172,11 +173,58 @@ body {
   z-index: 1;
 }
 
+.imgbar {
+  width: 100%;
+}
 
+.single-review img{
+  width: 10%;
+  border-radius: 50%;
+}
 
-/* COMMS */
+.review-info {
+  display: inline;
+}
 
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
+.item-details .product-images img {
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 5px;
+}
 
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  max-width: 100%;
+}
 
-/* COMMS */
+.item-details .product-images .images {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 1em 1em;
+  margin-top: 1em;
+}
+
+.item-details .product-info .form-group.color-option .single-checkbox {
+  margin-top: 8px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+ol {  
+  list-style-type: none;  
+}  
+
+ul {  
+  list-style-type: none;  
+}  

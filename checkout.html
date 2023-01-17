@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/aseelicon.ico">
 
     <!-- Bootstrap 5 -->
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <!-- Google Fonts -->
@@ -22,109 +22,117 @@
 </head>
 <body>
 
-    <!-- Special Announcements -->
-    <div style="background-color: #B02A37;">
-      <p class="text-light fw-light text-center p-2" style="font-size: 14px;">⚽ USE CODE : WC2022 FOR 20% OFF 🎁</p>
-    </div>
+  <!-- Special Announcements -->
+   
+  <div class="top-banner">
+    <p class="banner-text text-light fw-semibold text-center p-3">🎉 FREE SHIPPING ON ALL PRODUCTS ! USE CODE : QATAR22 🎉</p>
+    <button class="close-banner btn btn-warning text-light rounded-pill position-absolute mx-3 my-2" style="top: 0; right: 0;"><i class="fa fa-times" aria-hidden="true"></i></button>
+  </div>
 
-    
-    <!-- Navbar -->
+  
+  <!-- Navbar -->
 
-    <div class="container px-5">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between pb-3">
-          <a href="./index.html" class="d-flex align-items-center col-md-3 mb-md-0 text-dark text-decoration-none navbar-brand">
-            <img src="./assets/images/aseelLogo.svg" alt="AseelLogo" width="120px">
-          </a>
-    
-          <ul class="nav col-12 col-md-auto justify-content-center mb-md-0">
-            <li><a href="./index.html" class="nav-link px-2 link-secondary fw-light">Home</a></li>
-            <li><a href="./clothing.html" class="nav-link px-2 link-secondary fw-light">Clothing</a></li>
-            <li><a href="./arts.html" class="nav-link px-2 link-secondary fw-light">Arts & Crafts</a></li>
-            <li><a href="./beauty.html" class="nav-link px-2 link-secondary fw-light">Beauty</a></li>
-            <li><a href="./about.html" class="nav-link px-2 link-secondary fw-light">About</a></li>
-          </ul>
+  <div class="container-fluid px-5 mt-3">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between pb-3 px-5">
+      <a href="./index.html" class="d-flex align-items-center col-md-3 mb-md-0 text-dark text-decoration-none navbar-brand">
+        <img src="./assets/images/aseelLogo.svg" alt="AseelLogo" width="120px">
+      </a>
 
-          <form class="d-flex col-md-auto">
-            <input class="form-control me-2" type="search" placeholder="🔍 Search" aria-label="Search">
-          </form>
-          
-          <div class="dropdown text-end">
-            <a href="#" class="d-block link-danger p-2 text-secondary text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24"  fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-              </svg>
-              <span class="badge rounded-pill bg-danger">3</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li></li>
-              <li>
-                <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
-                  <img width="42px" height="42px" src="./assets/images/artscrafts.jpg" alt="order" srcset="">
-                  Documents
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
-                  <svg class="bi" width="16" height="16"><use xlink:href="#image-fill"/></svg>
-                  Photos
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
-                  <svg class="bi" width="16" height="16"><use xlink:href="#film"/></svg>
-                  Movies
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
-                  <svg class="bi" width="16" height="16"><use xlink:href="#music-note-beamed"/></svg>
-                  Music
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
-                  <svg class="bi" width="16" height="16"><use xlink:href="#joystick"/></svg>
-                  Games
-                </a>
-              </li>
-              <li><hr class="dropdown-divider"></li>
-              <li>
-                <a class="dropdown-item dropdown-item-danger d-flex gap-2 align-items-center" href="#">
-                  <svg class="bi" width="16" height="16"><use xlink:href="#trash"/></svg>
-                  Trash
-                </a>
-              </li>
-            </ul>
+      <ul class="nav col-12 col-md-auto justify-content-center">
+        <li><a href="./index.html" class="nav-link px-2 link-danger fw-semibold">Home</a></li>
+        <li><a href="./clothing.html" class="nav-link px-2 link-secondary fw-light">Clothing</a></li>
+        <li><a href="./arts.html" class="nav-link px-2 link-secondary fw-light">Arts & Crafts</a></li>
+        <li><a href="./beauty.html" class="nav-link px-2 link-secondary fw-light">Beauty</a></li>
+        <li><a href="./about.html" class="nav-link px-2 link-secondary fw-light">About</a></li>
+      </ul>
+
+      <!-- Search Bar -->
+
+      <form class="d-flex form-group">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button type="submit" class="btn bg-danger"><span class="fa fa-search text-white"></span></button>
+      </form>
+
+      <!-- Language -->
+
+      <div class="dropdown text-end">
+        <a href="#" class="d-block link-secondary p-2 text-secondary text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="./assets/images/united-states-flag-icon.svg" alt="us-english" width="24"> EN
+        </a>
+        <ul class="dropdown-menu text-small">
+          <li><a class="dropdown-item" href="#"><img src="./assets/images/france-flag-icon.svg" alt="french" width="24"> French</a></li>
+          <li><a class="dropdown-item" href="#"><img src="./assets/images/morocco-flag-icon.svg" alt="arabic" width="24"> Arabic</a></li>
+        </ul>
+      </div>
+
+      <!-- View Cart -->
+      
+      <div class="dropdown text-small">
+        <a href="#" class="d-block link-secondary p-2 text-secondary text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24"  fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>
+          <span class="badge rounded-pill bg-danger">2</span>
+        </a>
+        <div class="dropdown-menu">
+          <div class="d-flex border-bottom px-2 py-2 justify-content-between">
+            <small class="text-muted">2 Items</small>
+            <small><a href="./shopping-cart.html" class="link link-secondary nav-link">View Cart</a></small>
           </div>
+          <li class="p-2 border-bottom">
+            <span class="item">
+                <small class="item-info">
+                  <span>Coasters Set of 6 :</span>
+                  <span class="fw-semibold">105 MAD</span>
+                </small>
+            </span>
+          </li>
+          <li class="p-2">
+            <span class="item">
+                <small class="item-info">
+                  <span>Mosaic Table Lamp :</span>
+                  <span class="fw-semibold">540 MAD</span>
+                </small>
+            </span>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li class="text-center">
+            <small>
+              Total : <span class="fw-semibold">645 MAD</span>
+              <a href="./checkout.html" class="btn btn-danger rounded-pill m-2"><small>Checkout</small></a>
+            </small> 
+          </li>
+        </div>
+      </div>
 
-          <div class="dropdown text-end">
-            <a href="#" class="d-block link-danger p-2 text-secondary text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-              </svg>
-            </a>
-            <ul class="dropdown-menu text-small">
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><a class="dropdown-item" href="#">Orders</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
-          </div>
-        </header> 
-    </div>
+      <!-- View Personal Account & Orders  -->
 
-    <div class="aseelpattern-red">
-    </div>
+      <div class="dropdown text-end">
+        <a href="#" class="d-block link-secondary p-2 text-secondary text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg>
+        </a>
+        <ul class="dropdown-menu text-small">
+          <li><p class="dropdown-item fw-semibold border-bottom mb-2">My Account</p></li>
+          <li><a class="dropdown-item" href="#">Account</a></li>
+          <li><a class="dropdown-item" href="./shopping-cart.html">Orders</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Sign out</a></li>
+        </ul>
+      </div>
+    </header> 
+  </div>
 
     <!-- Checkout  -->
     
-    <div class="container pb-5 px-5 pt-3">
+    <div class="container pb-5 px-5 pt-3 mt-3 mb-5 bg-light rounded">
 
         <main>
           <div class="d-flex justify-content-between border-bottom mb-5 pt-3">
-            <h1 class="text-danger fw-bold">Checkout</h1>
+            <h1 class="text-dark fw-bold">Checkout</h1>
             <nav class="pt-2" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item "><a href="./index.html" class="text-decoration-none text-muted"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
@@ -137,7 +145,7 @@
             <div class="col-md-5 col-lg-4 order-md-last">
               <h4 class="d-flex justify-content-between align-items-center mb-3">
                 <span class="text-danger">Your cart</span>
-                <span class="badge bg-danger rounded-pill">3</span>
+                <span class="badge bg-danger rounded-pill">2</span>
               </h4>
               <ul class="list-group mb-3">
                 <li class="list-group-item d-flex justify-content-between lh-sm">
@@ -145,37 +153,37 @@
                     <h6 class="my-0">Coasters Set of 6</h6>
                     <small class="text-muted">Arts & Crafts</small>
                   </div>
-                  <span class="text-muted">MAD 105</span>
+                  <span class="text-muted">105 MAD</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between lh-sm">
                   <div>
-                    <h6 class="my-0">Striped Coat Cardigan</h6>
-                    <small class="text-muted">Clothing | MEN</small>
+                    <h6 class="my-0">Mosaic Table Lamp</h6>
+                    <small class="text-muted">Arts & Crafts</small>
                   </div>
-                  <span class="text-muted">MAD 665</span>
+                  <span class="text-muted">540 MAD</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between bg-light">
                   <div class="text-success">
                     <h6 class="my-0">Promo Code</h6>
-                    <small>WC2022 (-20%)</small>
+                    <small>QATAR22 (-20%)</small>
                   </div>
-                  <span class="text-success">−MAD 154</span>
+                  <span class="text-success">−129 MAD</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between">
                   <span>Total (MAD)</span>
-                  <strong>MAD 616</strong>
+                  <strong>516 MAD</strong>
                 </li>
               </ul>
       
               <form class="card p-2">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Promo code">
-                  <button type="submit" class="btn btn-danger">Apply</button>
+                  <input type="text" class="form-control rounded" placeholder="Promo code">
+                  <button type="submit" class="btn btn-danger mx-2 rounded">Apply</button>
                 </div>
               </form>
             </div>
             <div class="col-md-7 col-lg-8">
-              <h4 class="mb-3">Shipping Address</h4>
+              <h4 class="mb-3 text-danger">Shipping Address</h4>
               <form class="needs-validation" novalidate>
                 <div class="row g-3">
                   <div class="col-sm-6">
@@ -231,6 +239,11 @@
                     <select class="form-select" id="country" required>
                       <option value="">Choose...</option>
                       <option>United States</option>
+                      <option>France</option>
+                      <option>Spain</option>
+                      <option>Germany</option>
+                      <option>Belgium</option>
+                      <option>Netherlands</option>
                     </select>
                     <div class="invalid-feedback">
                       Please select a valid country.
@@ -238,13 +251,10 @@
                   </div>
       
                   <div class="col-md-4">
-                    <label for="state" class="form-label">State</label>
-                    <select class="form-select" id="state" required>
-                      <option value="">Choose...</option>
-                      <option>California</option>
-                    </select>
+                    <label for="validationCustom03" class="form-label">City</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
                     <div class="invalid-feedback">
-                      Please provide a valid state.
+                      Please provide a valid city.
                     </div>
                   </div>
       
@@ -271,7 +281,7 @@
       
                 <hr class="my-4">
       
-                <h4 class="mb-3">Payment Info</h4>
+                <h4 class="mb-4 text-danger">Payment Info</h4>
       
                 <div class="my-3">
                   <div class="form-check">
@@ -324,7 +334,7 @@
       
                 <hr class="my-4">
       
-                <button class="w-100 btn btn-danger btn-lg" type="submit">Continue to checkout</button>
+                <button class="w-100 btn btn-danger btn-lg" type="submit">Confirm Order</button>
               </form>
             </div>
           </div>
@@ -334,8 +344,8 @@
       <!-- Footer -->
       
       <div class="footer bg-light">
-        <footer class="pt-5">
-          <div class="row pb-5">
+        <footer class="pt-4 pb-4">
+          <div class="row pb-5 pt-5">
             <div class="col-6 col-md-3 mb-3">
               <h5 class="text-danger fw-semibold mb-3">Get in Touch</h5>
               <ul class="nav flex-column">
@@ -350,9 +360,9 @@
               <h5 class="text-danger fw-semibold mb-3">Information</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About Us</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact Us</a></li>
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Refund Policy</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shipping and Returns</a></li>
               </ul>
             </div>
       
@@ -367,16 +377,17 @@
       
             <div class="col-md-4 mb-3">
               <form>
-                <h5 class="text-danger fw-semibold mb-3">Subscribe to our newsletter</h5>
-                <p class="text-dark">Get notified about the latest drops and exclusive offers.</p>
+                <h5 class="text-danger fw-semibold mb-3">Subscribe To Our Newsletter</h5>
+                <p class="text-dark">Get all the latest information, sales and offers.</p>
                 <div class="d-flex flex-column flex-sm-row w-100 gap-2 mb-3">
                   <label for="newsletter1" class="visually-hidden">Email address</label>
                   <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
                   <button class="btn btn-danger" type="button">Subscribe</button>
                 </div>
-                <img src="./assets/images/visa-svgrepo-com.svg" width="32px" alt="visalogo">
+                <img src="./assets/images/visa-svgrepo-com.svg" width="36px" alt="visalogo">
                 <img class="mx-3" src="./assets/images/mastercard-svgrepo-com.svg" width="32px" alt="mastercardlogo">
                 <img src="./assets/images/paypal-svgrepo-com.svg" width="32px" alt="paypallogo">
+                <img class="mx-3" src="./assets/images/stripe-svgrepo-com.svg" width="32px" alt="stripelogo">
               </form>
             </div>
           </div>
@@ -412,11 +423,11 @@
           </div>
         </footer>
       </div>
-
-      <div class="aseelpattern-red">
+      
+      <div class="aseelpattern-footer">
       </div>
 
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
