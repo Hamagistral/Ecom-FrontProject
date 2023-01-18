@@ -1,0 +1,163 @@
+body {
+  font-family: 'Rubik', sans-serif !important;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Special Annoucement Banner */
+
+.top-banner {
+  background-image: url("../images/banner-bg.png");
+  background-size: cover;
+}
+
+.banner-text {
+  font-size: 18px;
+}
+
+/* Slogan du site au-dessus de la video */
+
+.hero-desc {
+  font-family: 'Montez', cursive;
+}
+
+.video-background-holder {
+  position: relative;
+  background-color: black;
+  height: calc(100vh - 72px);
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-background-content {
+  position: relative;
+  z-index: 2;
+}
+
+.video-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* Dropdown in nav bar */
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.dropdown-menu {
+  margin: 4rem auto;
+}
+
+/* Seperations custom patterns */
+
+.aseelpattern {
+  height: 15vh;
+  width: 100%;
+  background-image: url("../images/aseelPattern-one.png");
+  background-repeat: repeat;  
+}
+
+.aseelpattern-footer {
+  height: 10vh;
+  width: 100%;
+  background-image: url("../images/aseelPattern-footer.png");  
+  background-repeat: repeat;  
+}
+
+.background-pattern {
+  background-image: url("../images/background-white.png");  
+  background-repeat: no-repeat;  
+  background-position: 50% 20%;
+}
+
+.form-control-dark {
+  background-color: rgba(255, 255, 255, .05);
+  border-color: rgba(255, 255, 255, .15);
+}
+
+.form-control-dark {
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.imgbar {
+  width: 100%;
+}
+
+.single-review img{
+  width: 10%;
+  border-radius: 50%;
+}
+
+.review-info {
+  display: inline;
+}
+
+.item-details .product-images img {
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  max-width: 100%;
+}
+
+.item-details .product-images .images {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 1em 1em;
+  margin-top: 1em;
+}
+
+.item-details .product-info .form-group.color-option .single-checkbox {
+  margin-top: 8px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+ol {  
+  list-style-type: none;  
+}  
+
+ul {  
+  list-style-type: none;  
+}  

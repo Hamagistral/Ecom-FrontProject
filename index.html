@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/aseelicon.ico">
 
     <!-- Bootstrap 5 -->
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <!-- Google Fonts -->
@@ -21,116 +21,105 @@
 </head>
 <body>
 
-   <!-- Special Announcements -->
-   
-    <div class="top-banner">
-      <p class="banner-text text-light  text-center p-3">🎉 FREE SHIPPING ON ALL PRODUCTS (BLACK FRIDAY OFFER) 🎉</p>
-      <button class="close-banner btn btn-warning text-light rounded-pill position-absolute mx-3 my-2" style="top: 0; right: 0;"><i class="fa fa-times" aria-hidden="true"></i></button>
-    </div>
+  <!-- Special Announcements -->
+  <div class="top-banner">
+    <p class="banner-text text-light fw-semibold text-center p-3">🎉 FREE SHIPPING ON ALL PRODUCTS ! USE CODE : QATAR22 🎉</p>
+    <button class="close-banner btn btn-warning text-light rounded-pill position-absolute mx-3 my-2" style="top: 0; right: 0;"><i class="fa fa-times" aria-hidden="true"></i></button>
+  </div>
 
-    
-    <!-- Navbar -->
-
-    <div class="container">
-      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between pb-3 pt-2">
-        <a href="./index.html" class="d-flex align-items-center col-md-3 mb-md-0 text-dark text-decoration-none navbar-brand">
-          <img src="./assets/images/aseelLogo.svg" alt="AseelLogo" width="120px">
-        </a>
   
-        <ul class="nav col-12 col-md-auto justify-content-center mb-md-0">
-          <li><a href="./index.html" class="nav-link px-2 link-danger fw-semibold">Home</a></li>
-          <li><a href="./clothing.html" class="nav-link px-2 link-secondary fw-light">Clothing</a></li>
-          <li><a href="./arts.html" class="nav-link px-2 link-secondary fw-light">Arts & Crafts</a></li>
-          <li><a href="./beauty.html" class="nav-link px-2 link-secondary fw-light">Beauty</a></li>
-          <li><a href="./about.html" class="nav-link px-2 link-secondary fw-light">About</a></li>
+  <!-- Navbar -->
+  <div class="container-fluid px-5 mt-3">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between pb-3 px-5">
+      <a href="./index.html" class="d-flex align-items-center col-md-3 mb-md-0 text-dark text-decoration-none navbar-brand">
+        <img src="./assets/images/aseelLogo.svg" alt="AseelLogo" width="120px">
+      </a>
+
+      <ul class="nav col-12 col-md-auto justify-content-center">
+        <li><a href="./index.html" class="nav-link px-2 link-danger fw-semibold">Home</a></li>
+        <li><a href="./clothing.html" class="nav-link px-2 link-secondary fw-light">Clothing</a></li>
+        <li><a href="./arts.html" class="nav-link px-2 link-secondary fw-light">Arts & Crafts</a></li>
+        <li><a href="./beauty.html" class="nav-link px-2 link-secondary fw-light">Beauty</a></li>
+        <li><a href="./about.html" class="nav-link px-2 link-secondary fw-light">About</a></li>
+      </ul>
+
+      <!-- Search Bar -->
+      <form class="d-flex form-group">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button type="submit" class="btn bg-danger"><span class="fa fa-search text-white"></span></button>
+      </form>
+
+      <!-- Language -->
+      <div class="dropdown text-end">
+        <a href="#" class="d-block link-secondary p-2 text-secondary text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="./assets/images/united-states-flag-icon.svg" alt="us-english" width="24"> EN
+        </a>
+        <ul class="dropdown-menu text-small">
+          <li><a class="dropdown-item" href="#"><img src="./assets/images/france-flag-icon.svg" alt="french" width="24"> French</a></li>
+          <li><a class="dropdown-item" href="#"><img src="./assets/images/morocco-flag-icon.svg" alt="arabic" width="24"> Arabic</a></li>
         </ul>
+      </div>
 
-        <form class="d-flex form-group">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-          <button type="submit" class="btn border border-2"><span class="fa fa-search"></span></button>
-        </form>
-        
-        <div class="dropdown text-end">
-          <a href="#" class="d-block link-danger p-2 text-secondary text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24"  fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-            </svg>
-            <span class="badge rounded-pill bg-danger">3</span>
-          </a>
-          <div class="dropdown-menu">
-            <div class="d-flex border-bottom px-2 py-2 justify-content-between">
-              <span>2 Items</span>
-              <a href="cart.html" class="nav-link">View Cart</a>
-            </div>
-            <li>
-              <span class="item">
-                <span class="item-left">
-                    <img src="./assets/images/artscrafts.jpg" width="58px" alt="" />
-                    <span class="item-info">
-                        <span>Item name</span>
-                        <span>23$</span>
-                    </span>
-                </span>
-                <span class="item-right">
-                    <button class="btn btn-xs btn-danger pull-right">x</button>
-                </span>
-              </span>
-            </li>
-            <li>
-              <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
-                <svg class="bi" width="16" height="16"><use xlink:href="#image-fill"/></svg>
-                Photos
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
-                <svg class="bi" width="16" height="16"><use xlink:href="#film"/></svg>
-                Movies
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
-                <svg class="bi" width="16" height="16"><use xlink:href="#music-note-beamed"/></svg>
-                Music
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
-                <svg class="bi" width="16" height="16"><use xlink:href="#joystick"/></svg>
-                Games
-              </a>
-            </li>
-            <li><hr class="dropdown-divider"></li>
-            <li>
-              <a class="dropdown-item dropdown-item-danger d-flex gap-2 align-items-center" href="#">
-                <svg class="bi" width="16" height="16"><use xlink:href="#trash"/></svg>
-                Trash
-              </a>
-            </li>
+      <!-- View Cart -->
+      <div class="dropdown text-small">
+        <a href="#" class="d-block link-secondary p-2 text-secondary text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24"  fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>
+          <span class="badge rounded-pill bg-danger">2</span>
+        </a>
+        <div class="dropdown-menu">
+          <div class="d-flex border-bottom px-2 py-2 justify-content-between">
+            <small class="text-muted">2 Items</small>
+            <small><a href="./shopping-cart.html" class="link link-secondary nav-link">View Cart</a></small>
           </div>
+          <li class="p-2 border-bottom">
+            <span class="item">
+                <small class="item-info">
+                  <span>Coasters Set of 6 :</span>
+                  <span class="fw-semibold">105 MAD</span>
+                </small>
+            </span>
+          </li>
+          <li class="p-2">
+            <span class="item">
+                <small class="item-info">
+                  <span>Mosaic Table Lamp :</span>
+                  <span class="fw-semibold">540 MAD</span>
+                </small>
+            </span>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li class="text-center">
+            <small>
+              Total : <span class="fw-semibold">645 MAD</span>
+              <a href="./checkout.html" class="btn btn-danger rounded-pill m-2"><small>Checkout</small></a>
+            </small> 
+          </li>
         </div>
+      </div>
 
-        <div class="dropdown text-end">
-          <a href="#" class="d-block link-danger p-2 text-secondary text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-            </svg>
-          </a>
-          <ul class="dropdown-menu text-small">
-            <li><a class="dropdown-item fw-semibold border-bottom mb-2" href="#">Your Account</a></li>
-            <li><a class="dropdown-item" href="#">Account</a></li>
-            <li><a class="dropdown-item" href="#">Orders</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sign out</a></li>
-          </ul>
-        </div>
-      </header> 
+      <!-- View Personal Account & Orders  -->
+      <div class="dropdown text-end">
+        <a href="#" class="d-block link-secondary p-2 text-secondary text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg>
+        </a>
+        <ul class="dropdown-menu text-small">
+          <li><p class="dropdown-item fw-semibold border-bottom mb-2">My Account</p></li>
+          <li><a class="dropdown-item" href="#">Account</a></li>
+          <li><a class="dropdown-item" href="./shopping-cart.html">Orders</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Sign out</a></li>
+        </ul>
+      </div>
+    </header> 
   </div>
 
       <!-- Hero (Video Display of Products)  -->
-
       <div class="video-background-holder">
         <div class="video-background-overlay">
           <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -140,25 +129,24 @@
         <div class="video-background-content container h-100">
           <div class="d-flex h-100 text-center align-items-center">
             <div class="w-100 text-white">
-              <img class="mb-4" src="./assets/images/aseelLogo-white.svg" alt="aseellogo" width="240px">
-              <h1 class="hero-desc mb-4">Original Moroccan Artisanat Products</h1>
-              <h2 class="btn btn-light rounded-pill px-4 py-2">SHOP NOW</h3>          
+              <img class="mb-4" src="./assets/images/aseelLogo-white.svg" alt="aseellogo" width="280px">
+              <h1 class="hero-desc mb-4">Authentic Moroccan Artisanship</h1>
+              <a href="#shopping-cat" class="btn btn-light rounded-pill px-4 py-2 mx-4 mt-2">SHOP NOW</a>    
             </div>
           </div>
         </div>
       </div>
       
 
-      <!-- Shopping Categories -->
-      
-      <div class="shopping-cat mx-5">
+      <!-- Shopping Categories --> 
+      <div class="container-fluid py-5 pb-5 background-pattern px-5">
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-5 p-5">
           <div class="img-background-overlay">
             <div class="col">
               <div class="card rounded-pill shadow-md card-cover overflow-hidden" style="height: 80vh; background-image: url('./assets/images/clothing.jpg');">
                 <div class="text-center justify-content-center align-items-center my-auto">
                   <h1 class="text-white mb-4">Clothing</h1>
-                  <button type="button" class="btn btn-outline-light border border-3 rounded-pill mx-auto px-3 py-2 mb-3 shadow">Shop Now</button>
+                  <a href="./clothing.html" class="btn btn-outline-light border border-3 rounded-pill mx-auto px-3 py-2 mb-3 shadow">Shop Now</a>
                 </div>
               </div>
             </div>
@@ -168,7 +156,7 @@
             <div class="card rounded-pill shadow-md card-cover overflow-hidden" style="height: 80vh; background-image: url('./assets/images/artscrafts.jpg');">
               <div class="text-center justify-content-center align-items-center my-auto">
                 <h1 class="text-white mb-4">Arts & Crafts</h1>
-                <button type="button" class="btn btn-outline-light border border-3 rounded-pill mx-auto px-3 py-2 mb-3 shadow">Shop Now</button>
+                <a href="./arts.html" class="btn btn-outline-light border border-3 rounded-pill mx-auto px-3 py-2 mb-3 shadow">Shop Now</a>
               </div>
             </div>
           </div>
@@ -177,28 +165,43 @@
             <div class="card rounded-pill shadow-md card-cover overflow-hidden" style="height: 80vh; background-image: url('./assets/images/beauty.jpg');">
               <div class="text-center justify-content-center align-items-center my-auto">
                 <h1 class="text-white mb-4">Beauty</h1>
-                <button type="button" class="btn btn-outline-light border border-3 rounded-pill mx-auto px-3 py-2 mb-3 shadow">Shop Now</button>
+                <a href="./beauty.html" class="btn btn-outline-light border border-3 rounded-pill mx-auto px-3 py-2 mb-3 shadow">Shop Now</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
+      </div> 
+      
       <div class="aseelpattern mb-4">
+      </div>
+      
+      <!-- Our Story -->
+
+      <div class="container mt-5 mb-5">
+        <div class="row g-3">
+          <div class="col-md-7 col-sm-1 align-self-center px-5">
+            <h2 class="fw-semibold mb-4">Welcome to Aseel</span></h2>
+            <p class="text-muted" align="justify">Founded in 2022 with a passion for Moroccan culture and a desire to share its unique artisanal creations with the world. We started small, with a select collection of handcrafted goods sourced directly from local artisans in Morocco. Today, we pride ourselves on being the go-to destination for authentic, one-of-a-kind Moroccan products. From traditional ceramics and textiles to modern jewelry and home decor, we offer a carefully curated selection of the best the country has to offer.</p>
+
+            <a href="./about.html" class="btn btn-danger mt-3 mb-3 px-4 py-2 rounded-pill">Our Story</a>
+          </div>
+          <div class="col-md-5 col-sm-1">
+            <img src="./assets/images/ourstory.png" alt="aseel" width="520px">
+          </div>
+        </div>
       </div>
 
       <!-- Trending Products  -->
-
-      <div class="container mb-5">
-        <h2 class="fw-semibold text-center p-3 mb-4">Trending Products</h2>
-        <div class="row  g-5">
-          <div class="col-sm-3">
-            <div class="card" style="width: 20rem;">
-              <img src="./assets/images/coasters.jpg" class="card-img-top" alt="Coasters">
+      <div class="container pb-5 pt-5">
+        <h2 class="fw-semibold text-center p-3 mb-5">Trending Products</h2>
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-4 g-3">
+          <div class="col">
+            <div class="card">
+              <img src="./assets/images/coasters.jpg" class="card-img-top" alt="Coasters" height="240rem">
               <span class="mx-2 badge text-bg-success position-absolute m-2">Free Shipping</span>
               <div class="card-body text-center">
                 <small class="card-text text-muted">Arts & Crafts</small><br>
-                <h5 class="card-title">Coasters Set of 6</h5>
+                <h5 class="card-title"><a href="./product-details.html" class="nav-link">Coasters Set of 6</a></h5>
                 <div>
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star text-warning"></span>
@@ -206,21 +209,22 @@
                   <span class="fa fa-star-half-o text-warning"></span>
                   <span class="fa fa-star-o text-warning"></span>
                   </span>(64)</span> 
-                  <h5 class="fw-semibold card-text text-danger mt-3 mb-2">MAD 105 </h5>      
+                  <h5 class="fw-semibold card-text text-danger mt-3 mb-2">105 MAD</h5>      
                 </div>
               </div>
               <div class="card-footer text-center">
-                <a href="#" class="px-5 btn btn-danger rounded-pill"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a>
+                <a href="#" class="px-4 btn btn-danger rounded-pill"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
-            <div class="card" style="width: 20rem;">
-              <img src="./assets/images/cardigan.jpg" class="card-img-top" alt="Coasters">
-              <span class="mx-2 badge bg-info text-dark position-absolute m-2">(30% OFF)</span>
+
+          <div class="col">
+            <div class="card">
+              <img src="./assets/images/cardigan.jpg" class="card-img-top" alt="Coasters" height="240rem">
+              <span class="mx-2 badge bg-danger text-white position-absolute m-2">30% OFF</span>
               <div class="card-body text-center">
-                <small class="card-text text-muted m-2">Clothing - MEN </small><br>
-                <h5 class="card-title">Striped Coat Cardigan</h5>
+                <small class="card-text text-muted m-2">Clothing MEN </small><br>
+                <h5 class="card-title"><a href="./product-details.html" class="nav-link">Striped Coat Cardigan</a></h5>
                 <div>
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star text-warning"></span>
@@ -228,91 +232,56 @@
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star-o text-warning"></span>
                   </span>(151)</span>
-                  <p class="card-text text-danger mt-3 mb-2"><del class="text-muted">MAD 950</del> MAD 665 </p>      
+                  <h5 class="fw-semibold card-text text-danger mt-3 mb-2"><del class="text-muted">950 MAD</del> 665 MAD</h5>      
                 </div>
               </div>
               <div class="card-footer text-center">
-                <a href="#" class="px-5 btn btn-danger rounded-pill"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a>
+                <a href="#" class="px-4 btn btn-danger rounded-pill"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
-            <div class="card" style="width: 20rem;">
-              <img src="./assets/images/lampe.jpg" class="card-img-top" alt="Lamp">
-              <span class="mx-2 badge text-bg-warning position-absolute m-2">Best seller</span>
+
+          <div class="col">
+            <div class="card border rounded">
+              <img src="./assets/images/argan.jpg" class="card-img-top" alt="Coasters" height="240rem">
+              <div class="card-body text-center">
+                <small class="card-text text-muted mb-3">Beauty</small>
+                <h5 class="card-title"><a href="./product-details.html" class="nav-link">Organic Argan Skincare Set</a></h5>
+                <div>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star-o text-warning"></span>
+                  </span>(77)</span>
+                  <h5 class="fw-semibold card-text text-danger mt-3 mb-2">245 MAD</h5>      
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#" class="px-4 btn btn-danger rounded-pill"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="./assets/images/lampe.jpg" class="card-img-top" alt="Lamp"  height="240rem">
+              <span class="mx-2 badge text-bg-warning position-absolute m-2">Best Seller</span>
               <div class="card-body text-center">
                 <small class="card-text text-muted">Arts & Crafts</small> <br>
-                <h5 class="card-title">Mosaic Table Lamp</h5>
+                <h5 class="card-title"><a href="./product-details.html" class="nav-link">Mosaic Table Lamp</a></h5>
                 <div>
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star text-warning"></span>
                   <span class="fa fa-star-half-o text-warning"></span>
-                  </span>(32)</span>
-                  <h5 class="fw-semibold card-text text-danger mt-3 mb-2">MAD 540 </h5>      
+                  </span>(258)</span>
+                  <h5 class="fw-semibold card-text text-danger mt-3 mb-2">540 MAD</h5>      
                 </div>
               </div>
               <div class="card-footer text-center">
-                <a href="#" class="px-5 btn btn-danger rounded-pill"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="card border rounded" style="width: 20rem;">
-              <img src="./assets/images/argan.jpg" class="card-img-top" alt="Coasters">
-              <div class="card-body text-center">
-                <small class="card-text text-muted mb-3">Beauty</small>
-                <h5 class="card-title">Organic Argan Skincare Set</h5>
-                <div class="text-small">
-                  <span class="fa fa-star text-warning"></span>
-                  <span class="fa fa-star text-warning"></span>
-                  <span class="fa fa-star text-warning"></span>
-                  <span class="fa fa-star-o text-warning"></span>
-                  <span class="fa fa-star-o text-warning"></span>
-                  </span>(48)</span>
-                  <h5 class="fw-semibold card-text mt-3 mb-2">MAD 540 </h5>      
-                </div>
-              </div>
-              <div class="text-center">
-                <a href="#" class="px-4 py-2 btn btn-danger rounded-pill mb-3"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Trending Products  -->
-      
-      <div class="container mb-5">
-        <h2 class="fw-semibold text-center p-3 mb-4">Moroccan Culture Blog</h2>
-
-        <div class="row mb-2">
-          <div class="col-md-6">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-              <div class="col p-4 d-flex flex-column position-static">
-                <p class="d-inline-block mb-2 text-primary">Football</p>
-                <h4 class="mb-0">World Cup 2022: Morocco to Face Spain in Round of 16</h4>
-                <div class="mb-1 text-muted">Dec 1</div>
-                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <button type="button" class="col-6 btn btn-danger rounded-pill">Continue Reading</button>
-              </div>
-              <div class="col-auto d-none d-lg-block">
-                <img class="img-thumbnail" src="./assets/images/blogwc.jpg" alt="moroccowc" width="200" height="250">
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-              <div class="col p-4 d-flex flex-column position-static">
-                <p class="d-inline-block mb-2 text-success">Cinema</p>
-                <h4 class="mb-0">Ouarzazate, African Capital of Cinema</h4>
-                <div class="mb-1 text-muted">Nov 26</div>
-                <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <button type="button" class="col-6 btn btn-danger rounded-pill">Continue Reading</button>
-              </div>
-              <div class="col-auto d-none d-lg-block">
-                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <a href="#" class="px-4 btn btn-danger rounded-pill"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a>
               </div>
             </div>
           </div>
@@ -321,7 +290,7 @@
 
       <!-- Features -->
 
-      <div class="features bg-light">
+      <div class="container-fluid bg-light mt-5 pt-3 pb-3 px-5">
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
           <div class="col d-flex align-items-start ">
             <div class="icon-square text-danger d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 px-4">
@@ -330,7 +299,7 @@
               </svg>
             </div>
             <div>
-              <h5 class="fw-semibold">Fast Shipping</h3>
+              <h5 class="fw-semibold text-black">Fast Shipping</h3>
               <p class="text-muted small">On order over $99</p>
             </div>
           </div>
@@ -342,7 +311,7 @@
               </svg>
             </div>
             <div>
-              <h5 class="fw-semibold">24/7 Support</h3>
+              <h5 class="fw-semibold text-black">24/7 Support</h3>
               <p class="text-muted small">Live Chat Or Call</p>
             </div>
           </div>
@@ -354,7 +323,7 @@
               </svg>
             </div>
             <div>
-              <h5 class="fw-semibold">Online Payment</h3>
+              <h5 class="fw-semibold text-black">Online Payment</h3>
               <p class="text-muted small">Secure Payment Services</p>
             </div>
           </div>
@@ -366,19 +335,163 @@
               </svg>
             </div>
             <div>
-              <h5 class="fw-semibold">Easy Return</h3>
+              <h5 class="fw-semibold text-black">Easy Return</h3>
               <p class="text-muted small">Hassle Free Shopping</p>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Special Deals -->
+      <div class="container-fluid py-5 pb-5 background-pattern px-5">
+        <h2 class="fw-semibold text-center pt-3 pb-3">Special Deals</h2>
+        <h5 class="text-center text-danger pb-3 mb-5">Ends in <span id="countdown" class="text-danger"></span></h5>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 d-flex justify-content-center align-items-center pb-5">
+          <div class="col">
+            <div class="card mb-3 mx-auto" style="max-width: 540px;">
+              <div class="row g-0 shadow shadow-md">
+                <div class="col-md-4">
+                  <span class="mx-2 badge bg-danger rounded-pill text-white position-absolute m-2">- 50 %</span>
+                  <img src="./assets/images/retrojersey.jpg" class="card-img-top rounded-start" alt="moroccanjersey" style="height: 100%;">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <small class="text-muted">Clothing</small>
+                    <h5 class="card-title mt-2 mb-3 fw-semibold"><a href="./product-details.html" class="nav-link">Morocco Retro Jersey 98</a></h5>
+                    <div>
+                      <span class="fa fa-star text-warning"></span>
+                      <span class="fa fa-star text-warning"></span>
+                      <span class="fa fa-star text-warning"></span>
+                      <span class="fa fa-star text-warning"></span>
+                      <span class="fa fa-star-half-o text-warning"></span>
+                      </span>(201)</span>
+                      <h5 class="fw-semibold card-text text-danger mt-3">880 MAD</h5>  
+                    </div>
+                    <a href="#" class="text-small px-4 btn btn-danger rounded-pill mt-2"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="card mb-3 mx-auto" style="max-width: 540px;">
+              <div class="row g-0 shadow shadow-md">
+                <div class="col-md-4">
+                  <span class="mx-2 badge bg-danger rounded-pill text-white position-absolute m-2">- 60 %</span>
+                  <img src="./assets/images/carpet.png" class="card-img-top rounded-start" alt="moroccanjersey" style="height: 100%;">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <small class="text-muted">Arts & Crafts</small>
+                    <h5 class="card-title mt-2 mb-3 fw-semibold"><a href="./product-details.html" class="nav-link">Handwoven Carpet</a></h5>
+                    <div>
+                      <span class="fa fa-star text-warning"></span>
+                      <span class="fa fa-star text-warning"></span>
+                      <span class="fa fa-star text-warning"></span>
+                      <span class="fa fa-star text-warning"></span>
+                      <span class="fa fa-star-o text-warning"></span>
+                      </span>(152)</span>
+                      <h5 class="fw-semibold card-text text-danger mt-3">1,800 MAD</h5>      
+                    </div>
+                    <a href="#" class="text-small px-4 btn btn-danger rounded-pill mt-2"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-3 mx-auto" style="max-width: 540px;">
+              <div class="row g-0 shadow shadow-md">
+                <div class="col-md-4">
+                  <span class="mx-2 badge bg-danger rounded-pill text-white position-absolute m-2">- 20 %</span>
+                  <img src="./assets/images/tagine.jpg" class="card-img-top rounded-start" alt="moroccanjersey" style="height: 100%;">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <small class="text-muted">Arts & Crafts</small>
+                    <h5 class="card-title mt-2 mb-3 fw-semibold"><a href="./product-details.html" class="nav-link">Colored Tagine</a></h5>
+                    <div>
+                      <span class="fa fa-star text-warning"></span>
+                      <span class="fa fa-star text-warning"></span>
+                      <span class="fa fa-star text-warning"></span>
+                      <span class="fa fa-star-half-o text-warning"></span>
+                      <span class="fa fa-star-o text-warning"></span>
+                      </span>(95)</span>
+                      <h5 class="fw-semibold card-text text-danger mt-3">600 MAD</h5>       
+                    </div>
+                    <a href="#" class="text-small px-4 btn btn-danger rounded-pill mt-2"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Blog  -->
+      
+      <div class="container mb-5 pb-3 mt-5">
+        <h2 class="fw-semibold text-center p-3 mb-4">Moroccan Culture Blog</h2>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-5 mb-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/blogwc.jpg" alt="sport" height="240rem">
+  
+              <div class="card-body">
+                <small class="text-muted">Sport</small>
+                <h4 class="mb-3 mt-2">Morocco write World Cup history as they reach semi-finals</h4>
+                <p class="card-text mb-2 mt-2 text-muted">Morocco wrote World Cup history on Saturday night as the first African and Arab country to reach the tournament’s semi-finals...</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <button type="button" class="btn btn-sm btn-danger px-3 py-2 rounded-pill">Read More</button>
+                  <small class="text-danger">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/blogtravel.jpg" alt="travel" height="240rem">
+  
+              <div class="card-body">
+                <small class="text-muted">Travel</small>
+                <h4 class="mb-3 mt-2">Marrakech Ranks Seventh Best City in the World of 2022</h4>
+                <p class="card-text mb-2 mt-2 text-muted">According to the ranking, Marrakech stands out for its “community,” and “creativity.” Even prior to the COVID-19 pandemic...</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <button type="button" class="btn btn-sm btn-danger px-3 py-2 rounded-pill">Read More</button>
+                  <small class="text-danger">7 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/blogeconomy.jpg" alt="economy" height="240rem">
+  
+              <div class="card-body">
+                <small class="text-muted">Economy</small>
+                <h4 class="mb-3 mt-2">Morocco’s Agriculture, Maritime Exports Exceed $7.79 Billion</h4>
+                <p class="card-text mb-2 mt-2 text-muted">Rabat - Morocco’s agricultural and maritime food products exceeded the threshold of MAD 80 billion...</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <button type="button" class="btn btn-sm btn-danger px-3 py-2 rounded-pill">Read More</button>
+                  <small class="text-danger">12 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
 
       <!-- Footer -->
       
-      <div class="footer bg-light">
-        <footer class="pt-5">
-          <div class="row pb-5">
+      <div class="container-fluid px-5 bg-light">
+        <footer class="pt-4 pb-4">
+          <div class="row pb-5 pt-5">
             <div class="col-6 col-md-3 mb-3">
               <h5 class="text-danger fw-semibold mb-3">Get in Touch</h5>
               <ul class="nav flex-column">
@@ -402,24 +515,25 @@
             <div class="col-6 col-md-3 mb-3">
               <h5 class="text-danger fw-semibold mb-3">Shopping Categories</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Clothing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Arts & Crafts</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Beauty</a></li>
+                <li class="nav-item mb-2"><a href="./clothing.html" class="nav-link p-0 text-muted">Clothing</a></li>
+              <li class="nav-item mb-2"><a href="./arts.html" class="nav-link p-0 text-muted">Arts & Crafts</a></li>
+              <li class="nav-item mb-2"><a href="./beauty.html" class="nav-link p-0 text-muted">Beauty</a></li>
               </ul>
             </div>
       
             <div class="col-md-4 mb-3">
               <form>
-                <h5 class="text-danger fw-semibold mb-3">Subscribe to our newsletter</h5>
-                <p class="text-dark">Get notified about the latest drops and exclusive offers.</p>
+                <h5 class="text-danger fw-semibold mb-3">Subscribe To Our Newsletter</h5>
+                <p class="text-dark">Get all the latest information, sales and offers.</p>
                 <div class="d-flex flex-column flex-sm-row w-100 gap-2 mb-3">
                   <label for="newsletter1" class="visually-hidden">Email address</label>
                   <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
                   <button class="btn btn-danger" type="button">Subscribe</button>
                 </div>
-                <img src="./assets/images/visa-svgrepo-com.svg" width="32px" alt="visalogo">
+                <img src="./assets/images/visa-svgrepo-com.svg" width="36px" alt="visalogo">
                 <img class="mx-3" src="./assets/images/mastercard-svgrepo-com.svg" width="32px" alt="mastercardlogo">
                 <img src="./assets/images/paypal-svgrepo-com.svg" width="32px" alt="paypallogo">
+                <img class="mx-3" src="./assets/images/stripe-svgrepo-com.svg" width="32px" alt="stripelogo">
               </form>
             </div>
           </div>
@@ -459,7 +573,8 @@
       <div class="aseelpattern-footer">
       </div>
 
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-</body>
+
+  </body>
 </html>
