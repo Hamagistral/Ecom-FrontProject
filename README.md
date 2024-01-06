@@ -4,8 +4,7 @@ This project aims to redesign the homepage of Amazon by incorporating a Moroccan
 
 ![homeaseel](https://user-images.githubusercontent.com/66017329/213320284-5336d249-66e6-41b6-830d-0c9c338c4e9b.PNG)
 
-<h2> 🛒 &nbsp;Live Demo</h2>
-[Aseel Shop](https://aseel-shop.netlify.app/)
+<a href="https://aseel-shop.netlify.app/"> 🛒 &nbsp;Live Demo</a>
 
 #### 
 
